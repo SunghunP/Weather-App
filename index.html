@@ -9,15 +9,38 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script defer src=".\js\script.js"></script>
 </head>
-<body class="flex-ctr">
-
+<body class="flex-cntr">
     <header id="header">Weather APP</header>
+    <header id="header">
     <div class="flex-ctr" id="search-bar" >
+        <h1>Weather APP</h1>
+    </header>
+    <div class="flex-cntr" id="search-bar" >
+        <p>Search:</p>
         <p>Search:</p>
         <input type="text" name="search-input" id="search-input">
+        <input type="text" name="search-input" id="search-input">
+    </div>
     </div>
     <div class="flex-ctr" id="city-data">
+    <div class="flex-cntr" id="city-data">
         <ul></ul>
+        <!-- push this into the dom using jquery -->
+        <div class="flex-cntr col" id="city-text">
+            <div>Weather in bla city in bla</div> <!-- -->
+            <div>bla bla bla</div> <!-- --> 
+        </div>
+        <div class="flex-cntr" id="city-weather">
+            <!-- push this into the dom using jquery -->
+            <div id="weather-img">Cloud icon/description</div> <!-- -->
+            <div>Current Temperature: 76</div> <!-- -->
+            <div class="flex-cntr">
+                <div>Windy/Rainy</div> <!-- -->
+                <div>Humidity: 30%</div> <!-- -->
+                <div>Wind Speed: 5mph</div> <!-- -->
+            </div>
+        </div>
+    </div>
     </div>
 
 </body>
