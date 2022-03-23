@@ -9,3 +9,8 @@ $.ajax("https://api.openweathermap.org/data/2.5/weather?q=Federal%20Way&appid=ke
 })
 
 // http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+
+const kelvinToFahrenheit = function (kelvin) {
+    return parseInt((kelvin*(9/5))-459.67)
+}
+console.log(kelvinToFahrenheit(290))
