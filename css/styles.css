@@ -1,3 +1,50 @@
 :root {
+    --bdy-bg-color: #31525B;
+    --bg-color: #B3DEE5;
+    --color: #FFA101;
+    --color-highlight: #FAE6B1;
+}
 
-} 
+/* * {
+    border: 5px solid red;
+} */
+
+body {
+    background-color: var(--bdy-bg-color);
+}
+
+.flex-cntr, .flex-cntr.col {
+    display: flex;
+    color: var(--color);
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.flex-cntr.col {
+    flex-direction: column;
+}
+
+#search-bar {
+    padding-bottom: 30px;
+}
+
+input {
+    width: 30%;
+}
+
+.city-weather {
+    height: 100%;
+    width: 33%;
+}
+
+#city-weather{
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.city-text {
+    width: 90%;
+}
