@@ -13,26 +13,28 @@
     <header id="header" class="flex-cntr col">
         <h1>Weather APP</h1>
     </header>
+
     <div class="flex-cntr" id="search-bar" >
         <p>Search:</p>
         <input type="text" name="search-input" id="search-input">
     </div>
+
     <div class="flex-cntr" id="city-data">
         <!-- push this into the dom using jquery -->
         <div class="flex-cntr col" id="city-text">
-            <div>Weather in bla city in bla</div> <!-- -->
-            <div>bla bla bla</div> <!-- --> 
+            <div>Weather in bla city</div> <!-- data.name  BONUS: get State as well-->
+            <div>March 19th, 2022</div> <!-- how do i get the current date? --> 
         </div>
     </div>
 
     <div class="flex-cntr" id="city-weather">
         <!-- push this into the dom using jquery -->
-        <div id="weather-img">Cloud icon/description</div> <!-- -->
-        <div>Current Temperature: 76</div> <!-- -->
+        <div id="weather-img">Cloud icon/description</div> <!-- match the words in data.weather.0.main i.e. cloudy to get an img.-->
+        <div>Current Temperature: 76</div> <!-- data.main.temp this returns a value in kelvin so i need to write a function to convert kelvin into farenheight -->
         <div class="flex-cntr col">
-            <div>Windy/Rainy</div> <!-- -->
-            <div>Humidity: 30%</div> <!-- -->
-            <div>Wind Speed: 5mph</div> <!-- -->
+            <div>Broken Clouds</div> <!-- data.weather.0.description -->
+            <div>Humidity: 30%</div> <!-- data.main.humidity should be able to interpolate a % at the end-->
+            <div>Wind Speed: 5mph</div> <!-- data.wind.speed -->
         </div>
     </div>
 
