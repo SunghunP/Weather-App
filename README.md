@@ -2,11 +2,10 @@
 ## Description
 A webpage where you will be able to see the weather in any city!
 
-The initial webpage view
-![Website initial view](https://imgur.com/a/7qDUmCN "Website Initial")
-What the webpage looks like after a search
-![Website view after search](https://imgur.com/a/eViQPDL "Website")
-
+The initial webpage view \n
+![Website initial view](https://i.imgur.com/G0xul5Q.png "Website Initial")\n
+What the webpage looks like after a search \n
+![Website view after search](https://i.imgur.com/S8CFbtx.png "Website")\n
 ## Purpose:
 A small Project to show my cumulative knowlege of HTML, CSS, JavaScript, JQuery, AJAX, and API calls.  
 
