@@ -50,8 +50,3 @@ input {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-#city-weather, #city-text {
-    border-radius: 20px;
-    border: 5px solid var(--bg-color-highlight);
-}
