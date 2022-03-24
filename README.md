@@ -9,3 +9,7 @@ A small Project to show my cumulative knowlege of HTML, CSS, JavaScript, JQuery,
 ### Website
 Here is a link to the webpage! Please bookmark or save this page if you would like to see future updates!
 https://sunghunp.github.io/Weather-App/
+
+
+### Future Updates
+Here are some of the 
