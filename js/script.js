@@ -66,7 +66,7 @@ $submitBtn.on("click", () => {
         console.log(error)
         window.alert("Sorry, but this city does not exist in our current records!")
     })
-
+    // adds a border
     $(`#${cityText}`).css('border-radius', '20px')
     $(`#${cityWeather}`).css('border-radius', '20px')
     $(`#${cityText}`).css('border', '5px solid var(--bg-color-highlight)')
