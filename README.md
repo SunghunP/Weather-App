@@ -19,4 +19,5 @@ https://openweathermap.org/api
 #### Usage and Features
 This is a webpage that allows the user to search the current weather, temperature, humidity, and a bit more! They can view any city within the data base of the openweathermap.org API
 
-#### Future Updates
+### Future Updates
+Here are some of the 
