@@ -19,6 +19,8 @@ I used the free api provided by openweathermap.org to tget all of the weather da
 You can sign up and get a free api key by visiting the link below.
 https://openweathermap.org/api
 
+I also used the latest version of jQuery which can be found here: https://code.jquery.com/jquery-3.6.0.js
+
 ## Usage and Features
 This is a webpage that allows the user to search the current weather, temperature, humidity, and a bit more! They can view any city within the data base of the openweathermap.org API
 
