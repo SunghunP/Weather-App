@@ -15,6 +15,7 @@ const API_KEY = console.API_KEY
 // all constant variables using jQuery
 const $contentContainer = $('.content-container')
 const $submitBtn = $('button')
+const $input = $("input")
 // all constant variables using vanilla
 const cityText = 'city-text'
 const cityWeather = 'city-weather'
@@ -42,3 +43,9 @@ function createAndPrependDiv (divSelector, className = null, idName = null ) {
         $div.prependTo(divSelector)
     }
 }
+
+$submitBtn.on("click", () => {
+    // get the user input
+    const userInput = $input.val()
+
+})
