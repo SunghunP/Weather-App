@@ -16,7 +16,7 @@ https://sunghunp.github.io/Weather-App/
 ## Requirements 
 I used the free api provided by openweathermap.org to tget all of the weather data displayed in the project. This includes the images which they documented in their API documentation.
 
-You can sign up and get a free api key by visiting the link below.
+You can sign up and get a free api key by visiting the link provided
 https://openweathermap.org/api
 
 I also used the latest version of jQuery which can be found here: https://code.jquery.com/jquery-3.6.0.js
