@@ -20,21 +20,23 @@
         <button>Submit</button>
     </div>
 
-    <!-- push this into the dom using jquery -->
-    <div class="flex-cntr" id="city-text">
-        <div class="city-text">Weather in bla city</div> <!-- data.name  BONUS: get State as well-->
-        <!-- <div class="city-text">March 19th, 2022</div> how do i get the current date?  -->
-    </div>
-    
-    <!-- push this into the dom using jquery -->
-    <div class="flex-cntr" id="city-weather">
+    <div class="content-container">
         <!-- push this into the dom using jquery -->
-        <div class="city-weather" id="weather-img">Cloud icon/description</div> <!-- match the words in data.weather.0.main i.e. cloudy to get an img.-->
-        <div class="city-weather">Current Temperature: 76</div> <!-- data.main.temp this returns a value in kelvin so i need to write a function to convert kelvin into farenheight -->
-        <div class="flex-cntr col city-weather" id="weather-description">
-            <div>Broken Clouds</div> <!-- data.weather.0.description -->
-            <div>Humidity: 30%</div> <!-- data.main.humidity should be able to interpolate a % at the end-->
-            <div>Wind Speed: 5mph</div> <!-- data.wind.speed -->
+        <div class="flex-cntr" id="city-text">
+            <div class="city-text">Weather in bla city</div> <!-- data.name  BONUS: get State as well-->
+            <!-- <div class="city-text">March 19th, 2022</div> how do i get the current date?  -->
+        </div>
+        
+        <!-- push this into the dom using jquery -->
+        <div class="flex-cntr" id="city-weather">
+            <!-- push this into the dom using jquery -->
+            <div class="city-weather" id="weather-img">Cloud icon/description</div> <!-- match the words in data.weather.0.main i.e. cloudy to get an img.-->
+            <div class="city-weather">Current Temperature: 76</div> <!-- data.main.temp this returns a value in kelvin so i need to write a function to convert kelvin into farenheight -->
+            <div class="flex-cntr col city-weather" id="weather-description">
+                <div>Broken Clouds</div> <!-- data.weather.0.description -->
+                <div>Humidity: 30%</div> <!-- data.main.humidity should be able to interpolate a % at the end-->
+                <div>Wind Speed: 5mph</div> <!-- data.wind.speed -->
+            </div>
         </div>
     </div>
 </body>
