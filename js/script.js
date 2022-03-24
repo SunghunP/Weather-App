@@ -25,3 +25,20 @@ const flexCntr = "flex-cntr"
 const kelvinToFahrenheit = function (kelvin) {
     return parseInt((kelvin*(9/5))-459.67)
 }
+
+// funtion to handle the creation of new divs and appending them to the .content-container div
+function createAndPrependDiv (divSelector, className = null, idName = null ) {
+    if (className === null && idName === null) {
+        const $div = $('<div></div>')
+        $div.prependTo(divSelector)
+    } else if (className !== null && idName === null) {
+        const $div = $(`<div class="${className}"></div>`)
+        $div.prependTo(divSelector)
+    } else if (className === null && idName !== null) {
+        const $div = $(`<div id="${idName}"></div>`)
+        $div.prependTo(divSelector)
+    } else {
+        const $div = $(`<div class="${className}" id="${idName}"></div>`)
+        $div.prependTo(divSelector)
+    }
+}
