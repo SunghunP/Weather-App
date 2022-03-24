@@ -47,14 +47,30 @@ function createAndPrependDiv (divSelector, className = null, idName = null ) {
 $submitBtn.on("click", () => {
     // get the user input
     const userInput = $input.val()
-
     // make the api call
     $.ajax(`https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${hidden.API_KEY}`)
     .then((data) => {
-        console.log(data)
+        // convert temperatures into usable ones
+        const tempMain = kelvinToFahrenheit(data.main.temp)
+        const tempFeelsLike = kelvinToFahrenheit(data.main.feels_like)
+        $(`.${cityText}`).text(`The weather in ${data.name} is ${data.weather[0].description}. It is currently ${tempMain}°F but feels like ${tempFeelsLike}°F`)
+        // use the img icon data to set the image for the appropriate weather
+        $('img').attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+        // add all of the text needed
+        $(`#current-temp`).text(`Current Temperature: ${tempMain}°F`)
+        $(`#0-description`).text(`${data.weather[0].main}`)
+        $(`#humidity`).text(`Humidity: ${data.main.humidity}%`)
+        $(`#wind-speed`).text(`Wind Speed: ${data.wind.speed}mph`)
     })
     .catch((error) => {
         console.log(error)
         window.alert("Sorry, but this city does not exist in our current records!")
     })
+
+    $(`#${cityText}`).css('border-radius', '20px')
+    $(`#${cityWeather}`).css('border-radius', '20px')
+    $(`#${cityText}`).css('border', '5px solid var(--bg-color-highlight)')
+    $(`#${cityWeather}`).css('border', '5px solid var(--bg-color-highlight)')
+    // clear input value
+    $input.val('')
 })
