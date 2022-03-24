@@ -10,8 +10,7 @@
 
 // This is for the city name and country code api calls
 // http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
-// getting the api key from the console object in console.js
-const API_KEY = console.API_KEY
+
 // all constant variables using jQuery
 const $contentContainer = $('.content-container')
 const $submitBtn = $('button')
@@ -44,8 +43,18 @@ function createAndPrependDiv (divSelector, className = null, idName = null ) {
     }
 }
 
+// event handler for the submit button
 $submitBtn.on("click", () => {
     // get the user input
     const userInput = $input.val()
 
+    // make the api call
+    $.ajax(`https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${hidden.API_KEY}`)
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error)
+        window.alert("Sorry, but this city does not exist in our current records!")
+    })
 })
