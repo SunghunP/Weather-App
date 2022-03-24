@@ -32,11 +32,11 @@
         <div class="flex-cntr" id="city-weather">
             <!-- push this into the dom using jquery -->
             <div class="city-weather" id="weather-img">Cloud icon/description</div> <!-- match the words in data.weather.0.main i.e. cloudy to get an img.-->
-            <div class="city-weather">Current Temperature: 76</div> <!-- data.main.temp this returns a value in kelvin so i need to write a function to convert kelvin into farenheight -->
+            <div class="city-weather" id="current-temp">Current Temperature: 76</div> <!-- data.main.temp this returns a value in kelvin so i need to write a function to convert kelvin into farenheight -->
             <div class="flex-cntr col city-weather" id="weather-description">
-                <div>Broken Clouds</div> <!-- data.weather.0.description -->
-                <div>Humidity: 30%</div> <!-- data.main.humidity should be able to interpolate a % at the end-->
-                <div>Wind Speed: 5mph</div> <!-- data.wind.speed -->
+                <div id="0-description">Broken Clouds</div> <!-- data.weather.0.description -->
+                <div id="humidity">Humidity: 30%</div> <!-- data.main.humidity should be able to interpolate a % at the end-->
+                <div id="wind-speed">Wind Speed: 5mph</div> <!-- data.wind.speed -->
             </div>
         </div> 
     </div>
