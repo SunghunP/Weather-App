@@ -17,6 +17,13 @@ html {
     margin: -10px -10px 50px -10px;
 }
 
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .flex-cntr, .flex-cntr.col {
     display: flex;
     color: var(--color);
@@ -48,7 +55,7 @@ input {
 }
 
 #city-text, #city-weather {
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 #city-text {
@@ -71,4 +78,30 @@ input {
 
 #weather-description {
     color: var(--color-highlight);
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        font-size: 22px;
+    }
+    #city-text, #city-weather {
+        width: 80%;
+    }
+
+    input {
+        width: auto;
+    }
+
+    #city-weather {
+        flex-direction: column;
+    }
+
+    #weather-description div {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: auto;
+    }
 }
