@@ -16,8 +16,8 @@ const $contentContainer = $('.content-container')
 const $submitBtn = $('button')
 const $input = $("input")
 // all constant variables using vanilla
-const cityText = $('#city-text')
-const cityWeather = $('#city-weather')
+const $cityText = $('#city-text')
+const $cityWeather = $('#city-weather')
 const flexCntr = "flex-cntr"
 
 // function to convert Kelvin into Fahrenheit
@@ -36,7 +36,7 @@ $submitBtn.on("click", () => {
         // convert temperatures into usable ones
         const tempMain = kelvinToFahrenheit(data.main.temp)
         const tempFeelsLike = kelvinToFahrenheit(data.main.feels_like)
-        $(`.${cityText}`).text(`The weather in ${data.name} is ${data.weather[0].description}. It is currently ${tempMain}°F but feels like ${tempFeelsLike}°F`)
+        $(`.city-text`).text(`The weather in ${data.name} is ${data.weather[0].description}. It is currently ${tempMain}°F but feels like ${tempFeelsLike}°F`)
         // use the img icon data to set the image for the appropriate weather
         $('img').attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         // add all of the text needed
@@ -50,27 +50,20 @@ $submitBtn.on("click", () => {
         window.alert("Sorry, but this city does not exist in our current records!")
     })
     // adds a border
-    $(`#${cityText}`).css('border-radius', '20px')
-    $(`#${cityWeather}`).css('border-radius', '20px')
-    $(`#${cityText}`).css('border', '5px solid var(--color-highlight)')
-    $(`#${cityWeather}`).css('border', '5px solid var(--color-highlight)')
-    $(`#${cityText}`).css('background-color', 'var(--bg-color-highlight)')
-    $(`#${cityWeather}`).css('background-color', 'var(--bg-color-highlight)')
-    $(`.${cityText}`).css('color', 'var(--color-highlight)')
-    $(`.${cityWeather}`).css('color', 'var(--color-highlight)')
+    $cityText.css('border-radius', '20px')
+    $cityWeather.css('border-radius', '20px')
+    $cityText.css('border', '5px solid var(--color-highlight)')
+    $cityWeather.css('border', '5px solid var(--color-highlight)')
+    $cityText.css('background-color', 'var(--bg-color-highlight)')
+    $cityWeather.css('background-color', 'var(--bg-color-highlight)')
+    $cityText.css('color', 'var(--color-highlight)')
+    $cityWeather.css('color', 'var(--color-highlight)')
     // clear input value
     $input.val('')
 })
 
 /* future developments
-// Creating a responsive design where the screen is 500px or smaller 
-@media screen and (max-width: 500px) {
-    #city-text, #city-weather {
-        width: 80%;
-    }
 
-    #city-weather.
-}
 // used for saving a list and appending it to the correct div. 
 // funtion to handle the creation of new divs and appending them to the .content-container div
 function createAndPrependDiv (divSelector, className = null, idName = null ) {
