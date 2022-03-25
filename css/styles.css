@@ -11,6 +11,12 @@ html {
     background-color: var(--bg-color);
 }
 
+#header {
+    background-color: var(--bg-color-highlight);
+    color: var(--color-highlight);
+    margin: -10px -10px 50px -10px;
+}
+
 .flex-cntr, .flex-cntr.col {
     display: flex;
     color: var(--color);
@@ -22,15 +28,27 @@ html {
 .flex-cntr.col {
     flex-direction: column;
 }
+
 #search-bar {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
+
+#search-bar div, #search-bar input, #search-bar button {
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 30px;
+}
+
 input {
-    width: 30%;
+    width: 300px;
 }
 
 .city-text {
     width: 90%;
+}
+
+#city-text, #city-weather {
+    max-width: 1000px;
 }
 
 #city-text {
@@ -49,4 +67,8 @@ input {
     justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#weather-description {
+    color: var(--color-highlight);
 }

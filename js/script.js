@@ -16,8 +16,8 @@ const $contentContainer = $('.content-container')
 const $submitBtn = $('button')
 const $input = $("input")
 // all constant variables using vanilla
-const cityText = 'city-text'
-const cityWeather = 'city-weather'
+const cityText = $('#city-text')
+const cityWeather = $('#city-weather')
 const flexCntr = "flex-cntr"
 
 // function to convert Kelvin into Fahrenheit
@@ -69,8 +69,23 @@ $submitBtn.on("click", () => {
     // adds a border
     $(`#${cityText}`).css('border-radius', '20px')
     $(`#${cityWeather}`).css('border-radius', '20px')
-    $(`#${cityText}`).css('border', '5px solid var(--bg-color-highlight)')
-    $(`#${cityWeather}`).css('border', '5px solid var(--bg-color-highlight)')
+    $(`#${cityText}`).css('border', '5px solid var(--color-highlight)')
+    $(`#${cityWeather}`).css('border', '5px solid var(--color-highlight)')
+    $(`#${cityText}`).css('background-color', 'var(--bg-color-highlight)')
+    $(`#${cityWeather}`).css('background-color', 'var(--bg-color-highlight)')
+    $(`.${cityText}`).css('color', 'var(--color-highlight)')
+    $(`.${cityWeather}`).css('color', 'var(--color-highlight)')
     // clear input value
     $input.val('')
 })
+
+/* future developments
+// Creating a responsive design where the screen is 500px or smaller 
+@media screen and (max-width: 500px) {
+    #city-text, #city-weather {
+        width: 80%;
+    }
+
+    #city-weather.
+}
+*/
