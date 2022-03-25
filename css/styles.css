@@ -1,5 +1,3 @@
-
-
 :root {
     --bg-color-highlight: #31525B;
     --bg-color: #B3DEE5;
@@ -12,6 +10,10 @@
 html {
     background-color: var(--bg-color);
     font-family: 'Fredoka', sans-serif;
+}
+
+body div {
+    font-size: 45px;    
 }
 
 #header {
@@ -45,13 +47,16 @@ html {
 }
 
 #search-bar div, #search-bar input, #search-bar button {
-    padding-right: 10px;
-    padding-left: 10px;
-    height: auto;
+    margin-left: 10px;
 }
 
 input {
+    font-size: 27px;
     width: 300px;
+    height: 35px;
+}
+button {
+    height: 40px;
 }
 
 .city-text {
@@ -59,7 +64,7 @@ input {
 }
 
 #city-text, #city-weather {
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 #city-text {
@@ -84,10 +89,15 @@ input {
     color: var(--color-highlight);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+    body div {
+        font-size: 22px;    
+    }
+
     #header {
         font-size: 22px;
     }
+
     #city-text, #city-weather {
         width: 80%;
     }
@@ -107,5 +117,22 @@ input {
 
     button {
         width: auto;
+    }
+
+    #search-bar div, #search-bar input, #search-bar button {
+        margin: 0px;
+    }
+    
+    input {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+    }
+
+    button {
+        height: auto;
+    }
+    img {
+        height: 140px;
     }
 }
