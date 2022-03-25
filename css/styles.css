@@ -36,7 +36,7 @@ html {
 #search-bar div, #search-bar input, #search-bar button {
     padding-right: 10px;
     padding-left: 10px;
-    height: 30px;
+    height: auto;
 }
 
 input {
