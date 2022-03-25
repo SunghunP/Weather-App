@@ -1,3 +1,5 @@
+
+
 :root {
     --bg-color-highlight: #31525B;
     --bg-color: #B3DEE5;
@@ -9,12 +11,14 @@
 } */
 html {
     background-color: var(--bg-color);
+    font-family: 'Fredoka', sans-serif;
 }
 
 #header {
     background-color: var(--bg-color-highlight);
     color: var(--color-highlight);
     margin: -10px -10px 50px -10px;
+    font-size: 35px;
 }
 
 .content-container {
@@ -80,7 +84,7 @@ input {
     color: var(--color-highlight);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #header {
         font-size: 22px;
     }
