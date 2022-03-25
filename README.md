@@ -3,9 +3,11 @@
 A webpage where you will be able to see the weather in any city!
 
 The initial webpage view 
-![Website initial view](https://i.imgur.com/G0xul5Q.png "Website Initial")
+![Website initial view](https://i.imgur.com/bNRD2ue.png "Website Initial")
 What the webpage looks like after a search 
-![Website view after search](https://i.imgur.com/S8CFbtx.png "Website")
+![Website view after search](https://i.imgur.com/PyPS6ro.png "Website")
+Website view after search if screen is less than 640px
+![Website view after search if screen is less than 640px](https://i.imgur.com/3qklDnL.png "Website")
 ## Purpose:
 A small Project to show my cumulative knowlege of HTML, CSS, JavaScript, JQuery, AJAX, and API calls.  
 
@@ -28,3 +30,7 @@ This is a webpage that allows the user to search the current weather, temperatur
 - In the future I hope to add the bonus functionality of saving a search history or appending the new searched cities into the top of the page. 
 - I would also like to make the page more appealing by tweaking with the CSS. 
 - Another piece of functionality I would like to add is the ability to save the cities searched in a user profile and view multiple cities at once. 
+
+## Updates
+#### 3/25/2022
+> Change a lot of the css to make the website much more responsive to smaller screen or resizing the screen. Also tweaked the Javascript file a bit to use constant variables until I want to create updates on appending divs into the DOM instead of reling on already created ones. Add lots of images and links to showcase what the website will look like. 
