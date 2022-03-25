@@ -38,7 +38,7 @@ $submitBtn.on("click", () => {
         const tempFeelsLike = kelvinToFahrenheit(data.main.feels_like)
         $(`.city-text`).text(`The weather in ${data.name} is ${data.weather[0].description}. It is currently ${tempMain}°F but feels like ${tempFeelsLike}°F`)
         // use the img icon data to set the image for the appropriate weather
-        $('img').attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+        $('img').attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`)
         // add all of the text needed
         $(`#current-temp`).text(`Current Temperature: ${tempMain}°F`)
         $(`#0-description`).text(`${data.weather[0].main}`)
