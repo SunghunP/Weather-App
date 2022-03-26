@@ -91,7 +91,7 @@ button {
     color: var(--color-highlight);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 860px) {
     body div {
         font-size: 25px;    
     }
